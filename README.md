@@ -6,7 +6,7 @@ Repositório dedicado à Atividade 2 do primeiro semestre de Sistemas para Inter
   - RM: 97000
   
 - Ana Claudia Felipe Vieira
-  - RM:
+  - RM: 97006
   
 - Pedro Henrique Barbosa Campos
   - RM:
