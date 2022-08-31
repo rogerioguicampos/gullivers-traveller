@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulario de Cadastro</title>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Imagem -->
+
+        <div class="form-image">
+            <img src="../image/Sp.png">
+        </div>
+
+        <!-- Botões -->
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre Seu Ponto Turístico</h1>
+                    </div>
+
+                    <div class="input-group">
+
+                        <div class="input-box">
+                            <label for="localname">Ponto Turístico</label>
+                            <input id="localname" type="text" name="localname" placeholder="Nome do Ponto Turístico" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="publicplace">Logradouro</label>
+                            <input id="publicplace" type="text" name="publicplace" placeholder="Logradouro" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">Número</label>
+                            <input id="number" type="number" name="number" placeholder="Número" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="zipcode">CEP</label>
+                            <input id="zipcode" type="number" name="zipcode" placeholder="CEP" required >
+                        </div>
+
+                        <div class="input-box">
+                            <label for="city">Cidade</label>
+                            <input id="city" type="text" name="city" placeholder="Cidade" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="state">UF</label>
+                            <input id="state" type="text" name="state" placeholder="UF" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Botões Categorias -->
+
+                <div class="gender-inputs">
+                    <div class="ginder-title">
+                        <h6>Categoria</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="cultural" name="gender">
+                            <label for="cultural">Cultural</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="sport" name="gender">
+                            <label for="sport">Esporte</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="night" name="gender">
+                            <label for="night">Noturno</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="gastronomy" name="gender">
+                            <label for="gastronomy">Gastronomia</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Botao Final -->
+
+                <div class="continue-button">
+                    <button><a href="#">Cadastrar</a></button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
