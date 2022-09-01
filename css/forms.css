@@ -8,13 +8,18 @@
 }
 
 body {
+    background-image: url(../images/background-forms.jpg), linear-gradient(#eb01a5, #d13531);;
+    background-color: #FFFCFD;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f9f2e7;
 }
+
 
 .container {
     width: 80%;
