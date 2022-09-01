@@ -32,7 +32,7 @@ body {
     padding: 1rem;
 }
 
-.form-image img{
+.form-image img {
     width: 31rem;
 }
 
@@ -63,20 +63,20 @@ body {
     border-radius: 10px;
 }
 
-.input-group{
+.input-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
 }
 
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
 }
 
-.input-box input{
+.input-box input {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
@@ -101,6 +101,32 @@ body {
 
 .input-box input::placeholder{
     color: #000000be;
+}
+
+select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-state {
+    position: relative;
+    display: inline-block;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+  }
+
+.dropdown-state {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
 }
 
 .gender-group{
