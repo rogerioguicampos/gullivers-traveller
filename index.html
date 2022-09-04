@@ -10,127 +10,105 @@
 </head>
 <body>
     <div class="container">
-        <!-- Imagem -->
+
         <div class="form-image">
-            <img src="images/sp.png">
+            <img src="images/travel_world2.png">
         </div>
 
-        <!-- Botões -->
-
         <div class="form">
+
             <form action="#">
+
                 <div class="form-header">
+
                     <div class="title">
                         <h1>Cadastre Seu Ponto Turístico</h1>
                     </div>
 
-                    <div class="input-group">
-
-                        <div class="input-box">
-                            <label for="localname">Ponto Turístico</label>
-                            <input id="localname" type="text" name="localname" placeholder="Nome do Ponto Turístico" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="publicplace">Logradouro</label>
-                            <input id="publicplace" type="text" name="publicplace" placeholder="Logradouro" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="number">Número</label>
-                            <input id="number" type="number" name="number" placeholder="Número" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="zipcode">CEP</label>
-                            <input id="zipcode" type="number" name="zipcode" placeholder="CEP" required >
-                        </div>
-
-                        <div class="input-box">
-                            <label for="city">Cidade</label>
-                            <input id="city" type="text" name="city" placeholder="Cidade" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="state">UF</label>
-                            <select class="input-state" id="state" type="text" name="state" placeholder="UF">
-                            <button class="dropdown-state">
-                                <option>AC</option>
-                                <option>AL</option>
-                                <option>AP</option>    
-                                <option>AM</option>
-                                <option>BA</option>    
-                                <option>CE</option>
-                                <option>DF</option>
-                                <option>ES</option>
-                                <option>GO</option>
-                                <option>MA</option>
-                                <option>MT</option>
-                                <option>MS</option>
-                                <option>MG</option>
-                                <option>PA</option>
-                                <option>PB</option>
-                                <option>PR</option>
-                                <option>PE</option>
-                                <option>PI</option>
-                                <option>RJ</option>
-                                <option>RN</option>
-                                <option>RS</option>
-                                <option>RO</option>
-                                <option>RR</option>
-                                <option>SC</option>
-                                <option>SP</option>
-                                <option>SE</option>
-                                <option>TO</option>
-                            </button>
-                            </select>
-                            
-                        </div>
-
-                    </div>
                 </div>
 
-                <!-- Botões Categorias -->
+                <div class="input-group">
 
-                <div class="genre-inputs">
-                    <div class="genre-title">
-                        <h6>Categoria</h6>
+                    <div class="input-box">
+                        <input id="localname" type="text" name="localname" placeholder="Nome do Ponto Turístico" required>
                     </div>
 
-                    <div class="genre-group">
-                        <div class="genre-input">
-                            <input type="radio" id="cultural" name="genre">
-                            <label for="cultural">Cultural</label>
-                        </div>
-
-                        <div class="genre-input">
-                            <input type="radio" id="sport" name="genre">
-                            <label for="sport">Esporte</label>
-                        </div>
-
-                        <div class="genre-input">
-                            <input type="radio" id="night" name="genre">
-                            <label for="night">Noturno</label>
-                        </div>
-
-                        <div class="genre-input">
-                            <input type="radio" id="gastronomy" name="genre">
-                            <label for="gastronomy">Gastronomia</label>
-                        </div>
-
-                        <div class="genre-input">
-                            <input type="radio" id="others" name="genre">
-                            <label for="others">Outros</label>
-                        </div>
-
+                    <div class="input-box">
+                        <input id="publicplace" type="text" name="publicplace" placeholder="Logradouro" required>
                     </div>
+
+                    <div class="input-box">
+                        <input id="number" type="number" name="number" placeholder="Número" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input id="zipcode" type="number" name="zipcode" placeholder="CEP" required >
+                    </div>
+
+                    <div class="input-box">
+                        <input id="city" type="text" name="city" placeholder="Cidade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <select class="input-state" id="state" type="text" name="state" placeholder="UF">
+                        <button class="dropdown_state">
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>    
+                            <option>AM</option>
+                            <option>BA</option>    
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </button>
+                        </select>
+                        
+                    </div>
+
                 </div>
 
-                <!-- Botao Final -->
+                <div class="dropdown">
+                    <input type="checkbox" id="dropdown">
+                  
+                    <label class="dropdown__face" for="dropdown">
+                      <div class="dropdown__text">Dropdown</div>
+                  
+                      <div class="dropdown__arrow"></div>
+                    </label>
+                  
+                    <ul class="dropdown__items">
+                      <li>Cultura</li>
+                      <li>Esporte</li>
+                      <li>Gastronomia</li>
+                      <li>Natureza</li>
+                      <li>Noturno</li>
+                      <li>Outros</li>
+                    </ul>
+                  </div>
 
                 <div class="continue-button">
                     <button><a href="#">Cadastrar</a></button>
                 </div>
+
             </form>
         </div>
 

@@ -8,8 +8,8 @@
 }
 
 body {
-    background-image: url(../images/background-forms.jpg), linear-gradient(#eb01a5, #d13531);;
-    background-color: #FFFCFD;
+    background-image: url(../images/vietnam.jpg);
+    background-color: #b6adb0;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -26,6 +26,7 @@ body {
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    opacity: 0.90;
 }
 
 .form-image {
@@ -57,17 +58,6 @@ body {
     justify-content: space-between;
 }
 
-.form-header h1::after{
-    content:'';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #40c0cb;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-}
-
 .input-group {
     display: flex;
     flex-wrap: wrap;
@@ -97,13 +87,6 @@ body {
     outline: 1px solid #58afb8;
 }
 
-.input-box label,
-.gender-title h6{
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
 .input-box input::placeholder{
     color: #000000be;
 }
@@ -126,34 +109,12 @@ select {
     box-shadow: 1px 1px 6px #0000001c;
   }
 
-.dropdown-state {
+.dropdown_state {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
-}
-
-.gender-group{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
-}
-
-.gender-input{
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input{
-    margin-right: 0.35rem;
-}
-
-.gender-input label{
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
 }
 
 .continue-button button{
@@ -191,29 +152,71 @@ select {
     }
 }
 
-@media and (max-width: 1064px) {
-    .container{
-        width: 90%;
-        height: auto;
-    }
+.dropdown {
+    position: relative;
+    width: 230px;
+    filter: url(#goo);
+  }
+  
+  .dropdown__face, .dropdown__items {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+  }
 
-    .input-group{
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 5rem;
-    }
+  .dropdown__face {
+    display: block;
+    position: relative;
+  }
 
-    .gender-input{
-        margin-top: 2rem;
-    }
+  .dropdown__items {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+  }
 
-    .gender-group{
-        flex-direction: column;
-    }
+  .dropdown__items::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    bottom: 100%;
+    right: 20%;
+    height: 40px;
+    width: 20px;
+  }
 
-    .gender-input{
-        margin-top: 0.5rem;
-    }
-}
+  .dropdown__arrow {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: right;
+  }
+
+  .dropdown input {
+    display: none;
+  }
+
+  .dropdown input:checked ~ .dropdown__items {
+    top: calc(100% + 25px);
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  svg {
+    display: none;
+  }
