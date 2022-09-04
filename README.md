@@ -1,4 +1,4 @@
-# Projeto Gulliver Traveller
+# Forms Atividade 2
 Repositório dedicado à Atividade 2 do primeiro semestre de Sistemas para Internet da Fiap.
 
 ## Integrantes do Grupo
