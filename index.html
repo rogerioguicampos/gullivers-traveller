@@ -12,7 +12,7 @@
     <div class="container">
 
         <div class="form-image">
-            <img src="images/travel_world2.png">
+            <img src="../projeto-gulliver-traveller/images/logo.png">
         </div>
 
         <div class="form">
@@ -38,11 +38,11 @@
                     </div>
 
                     <div class="input-box">
-                        <input id="number" type="number" name="number" placeholder="Número" required>
+                        <input id="number" type="number" name="number" placeholder="Número" min="0" required>
                     </div>
 
                     <div class="input-box">
-                        <input id="zipcode" type="number" name="zipcode" placeholder="CEP" required >
+                        <input id="zipcode" type="number" name="zipcode" placeholder="CEP" min="0" required >
                     </div>
 
                     <div class="input-box">
@@ -50,8 +50,9 @@
                     </div>
 
                     <div class="input-box">
-                        <select class="input-state" id="state" type="text" name="state" placeholder="UF">
-                        <button class="dropdown_state">
+                        <select class="input-state" class="dropdown" id="state" name="state" required>
+                        <button>
+                            <option disabled selected hidden>UF</option>
                             <option>AC</option>
                             <option>AL</option>
                             <option>AP</option>    
@@ -86,23 +87,18 @@
 
                 </div>
 
-                <div class="dropdown">
-                    <input type="checkbox" id="dropdown">
-                  
-                    <label class="dropdown__face" for="dropdown">
-                      <div class="dropdown__text">Dropdown</div>
-                  
-                      <div class="dropdown__arrow"></div>
-                    </label>
-                  
-                    <ul class="dropdown__items">
-                      <li>Cultura</li>
-                      <li>Esporte</li>
-                      <li>Gastronomia</li>
-                      <li>Natureza</li>
-                      <li>Noturno</li>
-                      <li>Outros</li>
-                    </ul>
+                <div class="input-box">
+                    <select class="input-type" class="dropdown" id="type" name="tyle" required>
+                        <button>
+                            <option disabled selected hidden>Selecione o tipo de ponto turístico</option>
+                            <option>Cultura</option>
+                            <option>Esporte</option>
+                            <option>Gastronomia</option>
+                            <option>Natureza</option>
+                            <option>Noturno</option>
+                            <option>Outros</option>
+                        </button>
+                    </select>
                   </div>
 
                 <div class="continue-button">
