@@ -89,6 +89,7 @@ p {
 }
 
 **/ 
+
 .input-box {
     display: flex;
     flex-direction: column;
@@ -135,7 +136,7 @@ select {
     box-shadow: 1px 1px 6px #0000001c;
   }
 
-.input-state:focus-visible, .input-type:focus-visible  {
+.input-state:focus-visible, .input-type:focus-visible, .input-time:focus-visible {
     outline: 1px solid #0278AE;
   }
 
