@@ -1,5 +1,5 @@
-# Forms Atividade 2
-Repositório dedicado à Atividade 2 do primeiro semestre de Sistemas para Internet da Fiap.
+# Projeto Gullivers Travelleer
+Repositório dedicado ao projeto do primeiro semestre de Sistemas para Internet da Fiap.
 
 ## Integrantes do Grupo
 - Rogério Guimarães de Campos Júnior
