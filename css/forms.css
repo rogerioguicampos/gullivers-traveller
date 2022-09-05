@@ -81,15 +81,6 @@ p {
     padding: 1rem 0;
 }
 
-/** Título do horário de funcionamento
-
-.input-group h2{
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-**/ 
-
 .input-box {
     display: flex;
     flex-direction: column;
@@ -105,11 +96,11 @@ p {
     box-shadow: 1px 1px 6px #0000001c;
 }
 
-.input-box input:hover {
+.input-box select:hover, input:hover {
     background-color: #eeeeee75;
 }
 
-.input-box input:focus-visible {
+.input-box select:focus-visible, input:focus-visible {
     outline: 1px solid #0278AE;
 }
 
@@ -121,53 +112,11 @@ select {
     -webkit-appearance: none;
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
+    background-color: #FFFCFD;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
+    box-shadow: 1px 1px 6px #6315151c;
 }
-
-.input-state {
-    position: relative;
-    display: inline-block;
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-  }
-
-.input-state:focus-visible, .input-type:focus-visible, .input-time:focus-visible {
-    outline: 1px solid #0278AE;
-  }
-
-.dropdown {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-}
-
-select::-webkit-scrollbar {
-    width: 7px;
-   }
-
-select::-webkit-scrollbar-track {
-    background: #0D0A0B;
-    border-radius: 10px;
-  }
-
-select::-webkit-scrollbar-thumb {
-    font-family: 'Lato', sans-serif;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #0278AE;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-  }
-
-select::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  } 
 
 .continue-button button{
     width: 100%;
@@ -204,73 +153,3 @@ select::-webkit-scrollbar-thumb:hover {
         width: 100%;
     }
 }
-
-.dropdown {
-    position: relative;
-    width: 230px;
-    filter: url(#goo);
-  }
-  
-  .dropdown__face, .dropdown__items {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 25px;
-  }
-
-  .dropdown__face {
-    display: block;
-    position: relative;
-  }
-
-  .dropdown__items {
-    display: none;
-    position: absolute;
-    margin: 0;
-    right: 0;
-    top: 50%;
-    width: 100%;
-    list-style: none;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    visibility: hidden;
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
-  }
-
-  .dropdown__items::before {
-    content: "";
-    background-color: #fff;
-    position: absolute;
-    bottom: 100%;
-    right: 20%;
-    height: 40px;
-    width: 20px;
-  }
-
-  .dropdown__arrow {
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg) translateY(-50%);
-    transform-origin: right;
-  }
-
-  .dropdown input {
-    display: none;
-  }
-
-  .dropdown input:checked ~ .dropdown__items {
-    top: calc(100% + 25px);
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  svg {
-    display: none;
-  }
